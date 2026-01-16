@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Winter | Econometrics & Statistics</title>
     <meta name="description" content="Luis Winter - PhD Candidate in Econometrics and Statistics at the University of Cologne. Research in Time Series Econometrics, Macroeconometrics, and Functional Data Analysis.">
+    <meta name="keywords" content="Luis Winter, Econometrics, Statistics, Time Series, Macroeconometrics, Functional Data Analysis, University of Cologne, PhD Candidate, Forecasting, Nowcasting, Factor Models">
+    <meta name="author" content="Luis Winter">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://luiswinter.com/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luiswinter.com/">
+    <meta property="og:title" content="Luis Winter | Econometrics & Statistics">
+    <meta property="og:description" content="PhD Candidate in Econometrics and Statistics at the University of Cologne. Research in Time Series Econometrics, Macroeconometrics, and Functional Data Analysis.">
+    <meta property="og:image" content="https://luiswinter.com/profile.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luis Winter | Econometrics & Statistics">
+    <meta name="twitter:description" content="PhD Candidate in Econometrics and Statistics at the University of Cologne.">
+    <meta name="twitter:image" content="https://luiswinter.com/profile.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Luis Winter",
+      "url": "https://luiswinter.com",
+      "image": "https://luiswinter.com/profile.png",
+      "jobTitle": "PhD Candidate in Economics",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "University of Cologne",
+        "department": "Institute of Econometrics and Statistics"
+      },
+      "email": "l.winter@uni-koeln.de",
+      "sameAs": [
+        "https://github.com/luiswn",
+        "https://scholar.google.com/citations?user=VNBvFUMAAAAJ",
+        "https://www.linkedin.com/in/luis-winter-402036170/"
+      ],
+      "knowsAbout": ["Econometrics", "Statistics", "Time Series Analysis", "Macroeconometrics", "Functional Data Analysis", "Forecasting", "Nowcasting"]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,6 +64,7 @@
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#software" class="nav-link">Software</a></li>
                 <li><a href="#teaching" class="nav-link">Teaching</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li><a href="CV.pdf" class="nav-link nav-cv" target="_blank">CV</a></li>
@@ -130,6 +178,57 @@
         </div>
     </section>
 
+    <section id="software" class="section software">
+        <div class="container">
+            <h2 class="section-title">Software</h2>
+            <div class="software-card">
+                <div class="software-header">
+                    <div class="software-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </div>
+                    <div class="software-title-wrapper">
+                        <h3 class="software-name">ffr</h3>
+                        <span class="software-lang">R Package</span>
+                    </div>
+                </div>
+                <p class="software-description">
+                    A comprehensive R package implementing the <strong>Functional Factor Regression</strong> methodology for modeling relationships between functional predictors and functional responses. The package provides tools for estimation, prediction, and statistical inference in functional linear models.
+                </p>
+                <div class="software-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">&#x2713;</span>
+                        <span>Function-on-function regression</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">&#x2713;</span>
+                        <span>Automatic factor determination via eigenvalue difference method</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">&#x2713;</span>
+                        <span>Confidence regions for coefficient surfaces</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">&#x2713;</span>
+                        <span>Visualization tools for coefficient surfaces and diagnostics</span>
+                    </div>
+                </div>
+                <div class="software-install">
+                    <code>devtools::install_github("luiswn/ffr")</code>
+                </div>
+                <div class="software-links">
+                    <a href="https://github.com/luiswn/ffr" target="_blank" class="software-btn primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        View on GitHub
+                    </a>
+                    <a href="https://arxiv.org/abs/2503.12611" target="_blank" class="software-btn secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        Related Paper
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="teaching" class="section teaching">
         <div class="container">
             <h2 class="section-title">Teaching</h2>
@@ -205,7 +304,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Luis Winter. All rights reserved.</p>
+            <p>&copy; 2026 Luis Winter. All rights reserved.</p>
         </div>
     </footer>
 
