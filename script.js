@@ -178,6 +178,44 @@ function initParallax() {
     });
 }
 
+// ===== Contact Info Obfuscation =====
+function initContactProtection() {
+    // Email links
+    const emailLinks = document.querySelectorAll('.email-link');
+    emailLinks.forEach(link => {
+        const user = link.dataset.user;
+        const domain = link.dataset.domain;
+
+        if (user && domain) {
+            const email = user + '@' + domain;
+            link.href = 'mailto:' + email;
+
+            const textSpan = link.querySelector('.email-text');
+            if (textSpan) {
+                textSpan.textContent = email;
+            }
+        }
+    });
+
+    // Phone links
+    const phoneLinks = document.querySelectorAll('.phone-link');
+    phoneLinks.forEach(link => {
+        const prefix = link.dataset.prefix;
+        const number = link.dataset.number;
+
+        if (prefix && number) {
+            const displayPhone = prefix + ' ' + number;
+            const telPhone = displayPhone.replace(/[\s-]/g, '');
+            link.href = 'tel:' + telPhone;
+
+            const textSpan = link.querySelector('.phone-text');
+            if (textSpan) {
+                textSpan.textContent = displayPhone;
+            }
+        }
+    });
+}
+
 // ===== Initialize Everything =====
 document.addEventListener('DOMContentLoaded', () => {
     typeText();
@@ -188,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavbarScroll();
     initActiveNavHighlight();
     initParallax();
+    initContactProtection();
 });
 
 // ===== Reduce motion for accessibility =====
